@@ -1,5 +1,5 @@
 import { Box, Grid } from "@mui/material";
-import { CardDashboard } from "../../shared";
+import { CardDashboard, SearchAndFilter } from "../../shared/components";
 import { useFetchCountries } from "../../shared/hooks";
 
 interface IUseFechCountriesProps {
@@ -20,6 +20,11 @@ export function Home() {
 
   return (
     <Box maxWidth={1080} margin="auto">
+
+      <Box display="flex" justifyContent="space-between" alignItems="center" marginY={4}>
+        <SearchAndFilter />
+      </Box>
+
       <Grid container spacing={7}>
 
         {data?.map((countrie, index) => (
