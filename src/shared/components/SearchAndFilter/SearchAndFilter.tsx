@@ -1,4 +1,4 @@
-import { Box, Select, TextField, InputAdornment, MenuItem, SelectChangeEvent } from "@mui/material";
+import { Box, Select, TextField, InputAdornment, MenuItem, SelectChangeEvent, Input } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
 import { useState } from "react";
 
@@ -35,6 +35,9 @@ export function SearchAndFilter() {
           <MenuItem value="" disabled><em>Filter by Region</em></MenuItem>
           <MenuItem value="Africa">Africa</MenuItem>
           <MenuItem value="America">America</MenuItem>
+          <MenuItem value="Asia">Asia</MenuItem>
+          <MenuItem value="Europe">Europe</MenuItem>
+          <MenuItem value="Oceania">Oceania</MenuItem>
         </Select>
       </Box>
     </>
