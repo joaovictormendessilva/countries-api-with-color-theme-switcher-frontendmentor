@@ -9,6 +9,7 @@ export function Header() {
   return (
     <Box
       paddingY={2}
+      marginBottom={4}
       bgcolor={theme.palette.mode === 'light' ? theme.palette.primary.main : theme.palette.primary.main}
       boxShadow={1}>
       <Box maxWidth={1080} display="flex" justifyContent="space-between" margin="auto">

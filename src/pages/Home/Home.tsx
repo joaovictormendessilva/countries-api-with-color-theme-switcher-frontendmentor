@@ -21,7 +21,7 @@ export function Home() {
   return (
     <Box maxWidth={1080} margin="auto">
 
-      <Box display="flex" justifyContent="space-between" alignItems="center" marginY={4}>
+      <Box display="flex" justifyContent="space-between" alignItems="center" marginBottom={4}>
         <SearchAndFilter />
       </Box>
 
