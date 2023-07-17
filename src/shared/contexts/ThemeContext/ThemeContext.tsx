@@ -36,7 +36,7 @@ export function ThemeContextProvider({ children }: IThemeContextProviderProps) {
   return (
     <ThemeContext.Provider value={{ toggleTheme }}>
       <ThemeProvider theme={theme}>
-        <Box bgcolor={theme.palette.background.default} height="100vh">
+        <Box bgcolor={theme.palette.background.default} minHeight="100vh">
           {children}
         </Box>
       </ThemeProvider>

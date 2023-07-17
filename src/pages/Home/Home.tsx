@@ -11,15 +11,16 @@ interface IUseFechCountriesProps {
   capital: string
   flags: {
     png: string
-  }
+  },
+  ccn3: string
 }
 
 export function Home() {
 
-  const { data } = useFetchCountries<IUseFechCountriesProps[]>()
+  const { data } = useFetchCountries<IUseFechCountriesProps[]>();
 
   return (
-    <Box maxWidth={1080} margin="auto">
+    <Box>
 
       <Box display="flex" justifyContent="space-between" alignItems="center" marginBottom={4}>
         <SearchAndFilter />
@@ -35,6 +36,7 @@ export function Home() {
               region={countrie.region}
               capital={countrie.capital}
               image={countrie.flags.png}
+              numericCode={countrie.ccn3}
             />
           </Grid>
         ))}

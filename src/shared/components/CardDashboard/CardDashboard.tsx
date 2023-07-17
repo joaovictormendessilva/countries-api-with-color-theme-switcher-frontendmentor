@@ -6,12 +6,13 @@ interface ICardDashboardProps {
   region: string
   capital: string
   image: string
+  numericCode: string
 }
 
-export function CardDashboard({ name, population, region, capital, image }: ICardDashboardProps) {
+export function CardDashboard({ name, population, region, capital, image, numericCode }: ICardDashboardProps) {
   return (
-    <Card>
-      <CardActionArea>
+    <Card >
+      <CardActionArea LinkComponent={"a"} href={`/details/${numericCode}`}>
         <CardMedia
           height={140}
           component="img"
